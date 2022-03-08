@@ -1,0 +1,306 @@
+/* ==========================================================================
+   Google Font
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+   /*...................................
+   1. Template default css
+   ................................... */
+html {
+overflow-x: hidden;
+
+}
+    
+body {
+font-family: 'Karla', sans-serif;
+overflow-x: hidden;
+font-size: 16px;
+}
+
+ul {
+list-style: outside none none;
+}
+
+li {
+list-style: none;
+display: inline-block;
+cursor: pointer;
+}
+a {
+color: #d6d6d6 !important;
+}
+
+a:hover {
+text-decoration: none;
+color: inherit;
+}
+a:focus,
+select:focus,
+input:focus{
+text-decoration: none  !important;
+outline: none !important;
+box-shadow: none !important;
+}
+.form-control:focus {
+outline: 0;
+box-shadow:none;
+}
+::placeholder{
+color: #7c7bae !important;
+}
+[type="color"]:focus,
+[type="date"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="link"]:focus,
+input:not([type]):focus,
+textarea:focus{
+/* border-color: #FBFAFB; */
+border: none;
+}
+/*------ 1. default-css ------*/
+.section-padding-top{
+padding-top: 50px;
+}
+.section-padding-bottom{
+padding-bottom: 50px;
+}
+.section-padding{
+padding: 0 50px;
+}
+/* header css  */
+.header{
+    background: #F7006E;
+    color: #fff;
+}
+.header-left {
+    display: flex;
+}
+
+.user-img img {
+    width: 106px;
+}
+.user-title {
+    margin-top: 10px;
+}
+.user-title button {
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px 30px;
+    position: relative;
+    color: #F7006E;
+}
+
+.user-title p {
+    position: absolute;
+    top: 58px;
+    left: 228px;
+    background: #F7006E;
+    border-radius: 50%;
+    height: 22px;
+    width: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 10px;
+}
+.humberg-icon{
+	float: right;
+    cursor: pointer;
+}
+.humberg-icon img {
+    margin-top: -55px;
+}
+.offcanvas-header p {
+    color: #F7006E;
+    margin-bottom: 24px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.offcanvas-menu button {
+    width: 122px;
+    margin-left: 10px;
+    margin-top: -33px;
+    padding: 4px 10px;
+}
+ul.menu li{
+    display: block;
+    text-align: left;
+}
+ul.menu li a i {
+    color: #F7006E;
+    margin-right: 5px;
+}
+ul.menu li a span{
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #000;
+    line-height: 17px;
+    margin-left: 5px;
+}
+
+.offcanvas-menu{
+    width: 260px;
+}
+/* category css  */
+.category {
+    padding-top: 148px;
+}
+.category-item {
+    padding: 46px;
+    text-align: center;
+}
+
+.category-item img {
+    margin-bottom: 13px;
+}
+/* media query te hobe 500-410
+    .user-title p {
+    position: absolute;
+    top: 55px;
+    left: 125px;} 
+    .header-logo img {
+    
+    margin-top: -155px;
+}*/
+
+/* .header-logo img {
+    float: right;
+    margin-top: -53px;
+} */
+/* self-bkash css  */
+.self-bkash{
+    background: #F7F7F7;
+    padding: 20px;
+}
+.self-content {
+    background: #fff;
+    padding-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.self-title {
+    border-bottom: 1px solid #d7d7d7;
+}
+.slider {
+    padding: 20px 0;
+}
+/* payment css  */
+.sponsor {
+    padding: 20px;
+}
+.sponsor-brand {
+    padding: 20px;
+}
+
+.sponsor-item img {
+    width: 160px;
+}
+.offer {
+    padding-bottom: 100px;
+}
+/* footer css  */
+.footer{
+    background: #F7006E;
+}
+.footer-icon {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+/* login css  */
+.login{
+    background: #F7F7F7;
+}
+.login-top{
+    color: #E1126D;
+}
+.language-btn{
+    border: 1px solid #E1126D;
+    padding: 8px 40px;
+    border-radius: 50px;
+    float: right;
+    color: #E1126D;
+    box-shadow: none;
+}
+.language-btn:hover{
+    color: #E1126D;
+}
+.login-content img {
+    width: 140px;
+}
+.login-content h1 {
+    padding: 35px 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+.login-content input{
+    border-bottom: 1px solid #d6d6d6 !important;
+    margin: 22px 0px;
+}
+.login-content p span {
+    color: #E1126D;
+}
+.next-icon {
+    background: #F7006E;   
+    color: #fff;
+}
+
+.next-icon p {
+    margin-top: 10px;
+}
+.right-icon{
+   margin-top: 10px;
+}
+
+/* @media(min-width: 500px){
+    .user-title p {
+        position: absolute; 
+         top: 55px;
+        left: 125px;
+    } 
+        .header-logo img {
+        
+        margin-top: -155px;
+    }
+} */
+/* make it responsive design  */
+@media (max-width: 1024px)
+{
+    .user-title p
+    {
+        left: 145px;
+        top: 56px;
+    }
+}
+@media (max-width: 991px)
+{
+    .user-title p
+    {
+        left: 174px;
+        top: 56px;
+    }
+}
+@media (max-width: 768px)
+{
+    .user-title p
+    {
+        left: 126px;
+        top: 54px;
+    }
+    .humberg-icon img
+    {
+        margin-top: -203px;
+        /* overflow-x: auto; */
+    }
+    
+
+
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build A Landing Page2 using Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <!-- slick slider  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/bkash-logo.png">
+</head>
+<body>
+ 
+     <!-- header -->
+     <header class="header fixed-top">
+         <div class="container">
+             <div class="header-top">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="header-left">
+                            <div class="user-img">
+                                <img src="images/girl.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="user-title">
+                                <h3>Simmim</h3>
+                                <button class="btn">Tap for balance</button>
+                                <p >ট</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="humberg-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="images/bkash-logo-white.png" alt="">                     
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </header>
+     <!---------- offcanvas menu starts ---------->
+    <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <p>বিকাশ মেনু</p>   
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <button class="btn language-btn">English</button>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li>
+            <a href="#statement"><i class="fa fa-align-center" aria-hidden="true"></i><span>সেস্টমেন্ট</span></a>
+            </li>
+            <li>
+            <a href="#limit"><i class="fa fa-tablet" aria-hidden="true"></i></i><span>লিমিট</span></a>
+            </li>
+            <li>
+            <a href="#cupon"> <i class="fas fa-school"></i><span>কুপন</span></a>
+            </li>
+            <li>
+            <a href="#data"><i class="fa fa-info" aria-hidden="true"></i><span>তথ্য হালনাগাদ</span></a>
+            </li>
+            <li>
+            <a href="#refer"> <i class="fa fa-users fa-lg"></i><span>রেফার বিকাশ অ্যাপ</span></a>
+            </li>
+            <li>
+            <a href="#map"> <i class="fa fa-camera fa-lg"></i></i><span>বিকাশ ম্যাপ</span></a>
+            </li>
+            <li>
+            <a href="#details"><i class="fa fa-info" aria-hidden="true"></i><span>বিকাশ নিয়ে জানুন</span> </a>
+            </li>
+            <li>
+            <a href="#settings"><i class="fa fa-cog" aria-hidden="true"></i><span>সেটিংস</span> </a>
+            </li>
+            <li>
+            <a href="#support"><i class="fa fa-info" aria-hidden="true"></i><span>সাপোর্ট</span></a>
+            </li>
+            <li>
+            <a href="#logout"><i class="fa fa-sign-out" aria-hidden="true"></i><span>লগ আউট</span> </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+  <!---------- offcanvas menu ends ---------->
+     <!-- ends of header -->
+     <!-- category starts -->
+     <section id="category" class="category ‍ section-padding-bottom">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/send-money.png" class="img-fluid" alt="">
+                         <p>সেন্ড মানি</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/mobile-charge.png" class="img-fluid" alt="">
+                         <p>মোবাইল রিচার্জ</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/hand-cash.png" class="img-fluid" alt="">
+                         <p>ক্যাশ আউট</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/payment.png" class="img-fluid" alt="">
+                         <p>পেমেন্ট</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/add-money.png" class="img-fluid" alt="">
+                         <p>অ্যাড মানি</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/pay-bill.png" class="img-fluid" alt="">
+                         <p>পে বিল</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/tiket.png" class="img-fluid" alt="">
+                         <p>টিকেট</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                     <div class="category-item">
+                         <img src="images/etc.png" class="img-fluid" alt="">
+                         <p>আরও</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- ends of category -->
+     <!-- self-bkash starts -->
+     <section id="self-bkash" class="self-bkash  section-padding-bottom">
+        <div class="self-content">
+         <div class="container">
+            <div class="self-title d-flex justify-content-between">
+                <h2>আমার বিকাশ</h2>
+                <i class="fa fas fa-caret-up"></i>
+            </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="category-item">
+                            <img src="images/send-money.png" class="img-fluid" alt="">
+                            <p>সেন্ড মানি</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item">
+                            <img src="images/mobile-charge.png" class="img-fluid" alt="">
+                            <p>মোবাইল রিচার্জ</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item">
+                            <img src="images/hand-cash.png" class="img-fluid" alt="">
+                            <p>ক্যাশ আউট</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item">
+                            <img src="images/payment.png" class="img-fluid" alt="">
+                            <p>পেমেন্ট</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- slider  -->
+         <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </section>
+     <!-- ends of self-bkash -->
+     <!-- payment -->
+     <section id="sponsor" class="sponsor">
+        <div class="self-content">
+            <div class="container">
+                <div class="self-title d-flex justify-content-between">
+                    <h2>সাজেশন</h2>
+                    <i class="fa fas fa-caret-up"></i>
+                </div>
+            <div class="sponsor-brand responsive">
+                <!-- sponsor-item -->
+                <div class="sponsor-item" style="width: 214px;">
+                <img src="images/payment/master.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/btcl.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/dash.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/Visa.svg.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/american.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/ab.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/desco.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/mobile-len.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/brac.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/Rocket-.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/ifc.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/ab.png" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/payment/desco.png" alt="sponsor-brand">
+                </div>
+            </div><!-- sponsor-brand-ends -->
+            </div> <!-- container-ends -->
+        </div>    
+      </section>
+     <!-- ends of payment -->
+     <!-- offer -->
+     <section id="sponsor" class="sponsor offer">
+        <div class="self-content">
+            <div class="container">
+                <div class="self-title d-flex justify-content-between">
+                    <h2>অফার</h2>
+                    <i class="fa fas fa-caret-up"></i>
+                </div>
+            <div class="sponsor-brand responsive">
+                <!-- sponsor-item -->
+                <div class="sponsor-item" style="width: 214px;">
+                <img src="images/offer/offer-1.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-2.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-3.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-4.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-5.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/hqdefault.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-1.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-2.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-3.jfif" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-4.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-5.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/hqdefault.jpg" alt="sponsor-brand">
+                </div>
+                <!-- sponsor-item -->
+                <div class="sponsor-item">
+                <img src="images/offer/offer-2.jfif" alt="sponsor-brand">
+                </div>
+            </div><!-- sponsor-brand-ends -->
+            </div> <!-- container-ends -->
+        </div>    
+      </section>
+     <!-- ends of offer -->
+     <!-- footer -->
+     <footer class="footer fixed-bottom">
+        <div class="d-flex justify-content-around">
+            <div class="footer-icon">
+                <i class="fa fas fa-home"></i>
+                <h2>হোম</h2>
+            </div>
+            <div class="footer-icon">
+                <i class="fa fa-qrcode"></i>
+                <h2>QR স্ক্যান</h2>
+            </div>
+            <div class="footer-icon">
+                <i class="fa fa-envelope"></i>
+                <h2>ইনবক্স</h2>
+            </div>
+        </div>
+     </footer>
+     <!-- ends of footer -->
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     
+     <!-- <script src="js/slick.min.js">javascript</script> -->
+     <script src="js/main.js">javascript</script>
+</body>
+</html>
